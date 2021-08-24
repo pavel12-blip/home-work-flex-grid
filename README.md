@@ -5,9 +5,9 @@
 
 ## Инструкция по использованию проекта
 
-Для более детального изучения кода проекта требуется клонировать [репозиторий](https://github.com/pavel12-blip/home-worg-flex-grid) так же потребуется редактор кода **Visual Studio Code**
+Для более детального изучения кода проекта требуется клонировать [репозиторий](https://github.com/pavel12-blip/home-work-flex-grid) так же потребуется редактор кода **Visual Studio Code**
 
 ## Автор
 
 Автор проекта Павел Лебедев  
-[ссылка на проект в Github Pages](https://pavel12-blip.github.io/home-worg-flex-grid/)
+[ссылка на проект в Github Pages](https://pavel12-blip.github.io/home-work-flex-grid/)
