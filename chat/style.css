@@ -1,19 +1,69 @@
 .wrapper {
+  display: grid;
+  width: 1200px;
   margin: 0 auto;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "a b ."
+    ". c d"
+    "e f ."
+    ". g h"
+    "j q ."
+    ". r s";
+    row-gap: 10px;
   background-color: #c4c4c4;
-  display: flex;
-  flex-direction: column;
+  border-radius: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.row {
-  margin: 10px auto;
-  display: inline-flex;
-  align-items: center;
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+.j {
+  grid-area: j;
+}
+.q {
+  grid-area: q;
+}
+.r {
+  grid-area: r;
+}
+.s {
+  grid-area: s;
 }
 .username {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   display: flex;
+  justify-self: end;
+}
+.username:nth-child(even){
+  justify-self: flex-start;
+}
+.anie{
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
 }
 .name {
   font-size: 20px;
@@ -23,13 +73,10 @@
   font-size: 8px;
   text-align: end;
 }
-.jack {
+.jacks {
   text-align: start;
 }
-.avatar {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
+
 
 .massage {
   background-color: rgb(228, 95, 95);
