@@ -2,6 +2,7 @@
   display: grid;
   width: 1200px;
   margin: 0 auto;
+  padding: 10px 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
@@ -12,6 +13,7 @@
     "j q ."
     ". r s";
     row-gap: 10px;
+    
   background-color: #c4c4c4;
   border-radius: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,17 +55,20 @@
   grid-area: s;
 }
 .username {
-  /* padding: 0 10px; */
+  
+  width: 100%;
   display: flex;
-  justify-self: end;
-}
-.username:nth-child(even){
-  justify-self: flex-start;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  }
+.wrapper > .username:nth-child(even){
+  justify-content: flex-start;
 }
 .anie{
-  display: flex;
-  flex-direction: column;
-  justify-items: end;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-items: end; */
 }
 .name {
   font-size: 20px;
@@ -76,14 +81,18 @@
 .jacks {
   text-align: start;
 }
-
+.avatar{
+  width: 70px;
+  height: 70px;
+  
+}
 
 .massage {
   background-color: rgb(228, 95, 95);
   border-radius: 20px 20px 20px 0;
   padding: 35px;
 }
-.massage:nth-child(odd) {
+.wrapper >.massage:nth-child(odd) {
   background-color: greenyellow;
   border-radius: 20px 20px 0 20px;
 }
